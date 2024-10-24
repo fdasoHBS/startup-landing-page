@@ -1,163 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HomeCare Plus - Quality Care for Your Loved Ones</title>
+    <title>Startup Landing Page | SparkRockets</title>
     <style>
-        * {
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            line-height: 1.6;
             background-color: #f4f4f4;
         }
 
-        header {
+        .header {
             background-color: #4CAF50;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5em;
-        }
-
-        section.hero {
-            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
-            height: 60vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             color: white;
             text-align: center;
+            padding: 50px 20px;
         }
 
-        section.hero h2 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
         }
 
-        section.hero p {
-            font-size: 1.2em;
-            width: 60%;
-            margin: 0 auto;
-        }
-
-        section.services {
-            padding: 40px;
-            text-align: center;
-        }
-
-        section.services h2 {
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-
-        section.services .service-container {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-
-        .service-container div {
-            background-color: #fff;
-            padding: 20px;
-            width: 30%;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .service-container div h3 {
-            margin-bottom: 15px;
+        .header p {
             font-size: 1.5em;
+            margin: 10px 0;
         }
 
-        .service-container div p {
-            font-size: 1.1em;
-            color: #555;
-        }
-
-        section.cta {
-            background-color: #4CAF50;
-            color: #fff;
-            padding: 40px;
+        .benefits, .features, .testimonials, .cta {
             text-align: center;
+            padding: 50px 20px;
+            background-color: white;
+            margin: 20px 0;
         }
 
-        section.cta h2 {
-            font-size: 2em;
+        .benefits h2, .features h2, .cta h2 {
+            font-size: 2.5em;
             margin-bottom: 20px;
         }
 
-        section.cta a {
-            text-decoration: none;
-            background-color: #fff;
-            color: #4CAF50;
-            padding: 10px 20px;
-            border-radius: 5px;
+        .benefits p, .features p, .testimonials p {
             font-size: 1.2em;
+            color: #333;
+        }
+
+        .benefit-list, .feature-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2em;
+        }
+
+        .benefit-list li, .feature-list li {
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .testimonials blockquote {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        .testimonials blockquote:before {
+            content: open-quote;
+        }
+
+        .testimonials blockquote:after {
+            content: close-quote;
+        }
+
+        .cta {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .cta a {
+            display: inline-block;
+            background-color: white;
+            color: #4CAF50;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.5em;
+            border-radius: 5px;
+            margin-top: 20px;
         }
 
         footer {
             text-align: center;
             padding: 20px;
             background-color: #333;
-            color: #fff;
+            color: white;
         }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
     </style>
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>HomeCare Plus - Check </h1>
-        <p>Providing Compassionate In-Home Care for Your Loved Ones</p>
-    </header>
+    <div class="header">
+        <h1>SparkRockets</h1>
+        <p>Simplify Home Healthcare Coordination</p>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div>
-            <h2>Your Family's Care, Our Priority</h2>
-            <p>At HomeCare Plus, we offer reliable, affordable, and compassionate in-home care services tailored to meet your loved ones’ needs.</p>
-        </div>
+    <section class="benefits">
+        <h2>Key Benefits</h2>
+        <p>Empowering providers, easing families' minds.</p>
+        <ul class="benefit-list">
+            <li><strong>Efficient Care Coordination:</strong> Streamline tasks, optimize schedules.</li>
+            <li><strong>Improved Communication:</strong> Enhance collaboration among care team.</li>
+            <li><strong>Enhanced Family Engagement:</strong> Keep families informed, ease worries.</li>
+            <li><strong>Personalized Care Plans:</strong> Tailored approach for each individual.</li>
+        </ul>
     </section>
 
-    <!-- Services Section -->
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-container">
-            <div>
-                <h3>Personal Care Assistance</h3>
-                <p>Our trained caregivers provide daily personal care services like bathing, dressing, and grooming to ensure your loved ones are comfortable.</p>
-            </div>
-            <div>
-                <h3>24/7 Support</h3>
-                <p>We offer around-the-clock care, giving you peace of mind that your family is in good hands, day and night.</p>
-            </div>
-            <div>
-                <h3>Health Monitoring</h3>
-                <p>Our caregivers monitor health conditions, track medications, and report to you regularly on your loved one's well-being.</p>
-            </div>
-        </div>
+    <section class="testimonials">
+        <h2>What People Are Saying</h2>
+        <blockquote>"ElderEase transformed our care process."</blockquote>
+        <p>- Gary from New York</p>
+        <blockquote>"Lifeline for coordinating my mom's care."</blockquote>
+        <p>- Emily from Los Angeles</p>
+        <blockquote>"Exceptional support for our elderly patients."</blockquote>
+        <p>- Sam from Chicago</p>
     </section>
 
-    <!-- Call to Action -->
+    <section class="features">
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li><strong>Task Assignment:</strong> Allocate responsibilities effortlessly.</li>
+            <li><strong>Real-Time Updates:</strong> Stay informed with instant notifications.</li>
+            <li><strong>Family Portal:</strong> Transparent access for families 24/7.</li>
+            <li><strong>Reporting Tools:</strong> Track progress, monitor outcomes.</li>
+        </ul>
+    </section>
+
     <section class="cta">
-        <h2>Ready to Give Your Loved Ones the Best Care?</h2>
-        <a href="#">Contact Us Today</a>
+        <h2>Start Simplifying Home Healthcare Today</h2>
+        <p>Experience ElderEase's comprehensive care coordination solution.</p>
+        <a href="https://sparkrockets.com">Get Started</a>
     </section>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 HomeCare Plus. All Rights Reserved.</p>
+        <p>We value your privacy. Check our <a href="https://app.sparkrockets.com/privacypolicy">Privacy Policy</a> and <a href="https://app.sparkrockets.com/terms">Terms of Use</a>.</p>
+        <p>Follow us on <a href="https://www.linkedin.com/company/sparkrockets/" target="_blank">LinkedIn</a></p>
     </footer>
 
 </body>
+
 </html>
