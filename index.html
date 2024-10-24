@@ -1,105 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Startup Landing Page | SparkRockets</title>
-    <link href="./Startup Landing Page _ SparkRockets_files/output.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HomeCare Plus - Quality Care for Your Loved Ones</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        section.hero {
+            background: url('https://via.placeholder.com/1500x600') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        section.hero h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        section.hero p {
+            font-size: 1.2em;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        section.services {
+            padding: 40px;
+            text-align: center;
+        }
+
+        section.services h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section.services .service-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .service-container div {
+            background-color: #fff;
+            padding: 20px;
+            width: 30%;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-container div h3 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .service-container div p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        section.cta {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        section.cta h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        section.cta a {
+            text-decoration: none;
+            background-color: #fff;
+            color: #4CAF50;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1.2em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-        <img src="./Startup Landing Page _ SparkRockets_files/photo-1521737604893-d14cc237f11d" alt=""
-            class="absolute inset-0 -z-10 h-full w-full object-cover">
-        <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-            aria-hidden="true">
-            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-                style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
-            </div>
-        </div>
 
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-4xl lg:mx-0">
-                <div class="mb-8 flex">
-                    <div class="font-semibold text-white relative rounded-full px-3 py-1 text-xl leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                        ElderEase
-                    </div>
-                </div>
-                <h2 class="text-5xl font-bold tracking-tight text-white sm:text-6xl">Simplify Home Healthcare Coordination</h2>
-                <p class="mt-6 text-3xl sm:text-4xl leading-8 text-gray-300">Empowering providers, easing families' minds.</p>
-            </div>
-        </div>
-    </div>
+    <!-- Header -->
+    <header>
+        <h1>HomeCare Plus</h1>
+        <p>Providing Compassionate In-Home Care for Your Loved Ones</p>
+    </header>
 
-    <div class="overflow-hidden bg-white py-24 sm:py-20">
-        <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
-            <div class="grid flex-col grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start lg:place-items-start place-items-center">
-                <div class="px-6 lg:px-0 lg:pr-4 w-full flex justify-start">
-                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
-                        <p class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-indigo-600">Key Benefits</p>
-                        <dl class="mt-10 max-w-xl space-y-8 text-xl leading-7 text-gray-600 lg:max-w-none">
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    Efficient Care Coordination.
-                                </dt>
-                                <dd class="inline">Streamline tasks, optimize schedules.</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    Improved Communication.
-                                </dt>
-                                <dd class="inline">Enhance collaboration among care team.</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    Enhanced Family Engagement.
-                                </dt>
-                                <dd class="inline">Keep families informed, ease worries.</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    Personalized Care Plans.
-                                </dt>
-                                <dd class="inline">Tailored approach for each individual.</dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
-                <div class="sm:px-6 lg:px-0 lg:pr-4 w-full h-full flex items-center">
-                    <img class="-mb-12 w-full h-full sm:rounded-xl bg-gray-800 ring-1 ring-white/10" src="./Startup Landing Page _ SparkRockets_files/62b4458c-e372-4e6f-a761-d7ba7df69df7.png" alt="Create a realistic image showing a home healthcare provider assisting an elderly person.">
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div>
+            <h2>Your Family's Care, Our Priority</h2>
+            <p>At HomeCare Plus, we offer reliable, affordable, and compassionate in-home care services tailored to meet your loved ones’ needs.</p>
         </div>
-    </div>
+    </section>
 
-    <div class="relative isolate overflow-hidden bg-gray-900">
-        <div class="px-6 py-18 sm:px-6 py-24 lg:px-8">
-            <div class="mx-auto max-w-2xl text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Start Simplifying Home Healthcare Today</h2>
-                <p class="mx-auto mt-6 max-w-xl text-xl leading-8 text-gray-300">Experience ElderEase's comprehensive care coordination solution.</p>
-                <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="https://sparkrockets.com/" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get Started</a>
-                </div>
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div>
+                <h3>Personal Care Assistance</h3>
+                <p>Our trained caregivers provide daily personal care services like bathing, dressing, and grooming to ensure your loved ones are comfortable.</p>
+            </div>
+            <div>
+                <h3>24/7 Support</h3>
+                <p>We offer around-the-clock care, giving you peace of mind that your family is in good hands, day and night.</p>
+            </div>
+            <div>
+                <h3>Health Monitoring</h3>
+                <p>Our caregivers monitor health conditions, track medications, and report to you regularly on your loved one's well-being.</p>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer class="bg-white z-10">
-        <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-            <div class="flex justify-center space-x-6 md:order-2">
-                <a href="https://www.linkedin.com/company/sparkrockets/" class="text-gray-400 hover:text-gray-500" target="_blank">
-                    <span class="sr-only">LinkedIn</span>
-                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-                    </svg>
-                </a>
-            </div>
-            <div class="mt-8 md:order-1 md:mt-0">
-                <p class="font-semibold text-center leading-5 text-gray-500">We value your privacy, your ideas are not shared with anyone, for more info check our <a class="font-semibold text-sr-red hover:text-sr-blue" href="https://app.sparkrockets.com/privacypolicy" target="_blank">Privacy Policy</a> and <a class="font-semibold text-sr-red hover:text-sr-blue" href="https://app.sparkrockets.com/terms" target="_blank">Terms of Use</a>.</p>
-            </div>
-        </div>
+    <!-- Call to Action -->
+    <section class="cta">
+        <h2>Ready to Give Your Loved Ones the Best Care?</h2>
+        <a href="#">Contact Us Today</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 HomeCare Plus. All Rights Reserved.</p>
     </footer>
-</body>
 
+</body>
 </html>
