@@ -1,994 +1,158 @@
 <!DOCTYPE html>
-<!-- saved from url=(0082)https://app.sparkrockets.com/show/NGFiZDZmZDgtZGUwOC00NGE0LThhM2QtMzg5MTM4MTU3NDU1 -->
-<html style=""><plasmo-csui><template shadowrootmode="open"><style>#plasmo-shadow-container > div {
-  pointer-events: none !important;
-  background: none !important;
-  position: fixed !important;
-  inset: 0 !important;
-}
+<html lang="en">
 
-.main_top_container_ff {
-  width: 400px;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Landing Page | SparkRockets</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
 
-.popup_container_wrapper_ff {
-  background-color: #fff;
-}
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-.popup_container_wrapper_ff * {
-  font-family: PoppinsRegular;
-}
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
 
-.popup_container_wrapper_ff img {
-  background-color: #0000;
-}
+        .header p {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
 
-.popup_container_ff {
-  box-shadow: 0 5px 20px #1e1e2212;
-}
+        .benefits, .features, .testimonials, .cta {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: white;
+            margin: 20px 0;
+        }
 
-.popup_div_ff {
-  box-sizing: border-box;
-  background-color: #fff;
-  width: 100%;
-  padding: 24px;
-}
+        .benefits h2, .features h2, .cta h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
 
-.main_component_ff {
-  width: 100%;
-  padding-bottom: 0 !important;
-}
+        .benefits p, .features p, .testimonials p {
+            font-size: 1.2em;
+            color: #333;
+        }
 
-.popup_top_icon_div_ff {
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 16px;
-  display: flex;
-}
+        .benefit-list, .feature-list {
+            list-style-type: none;
+            padding: 0;
+            font-size: 1.2em;
+        }
 
-.popup_top_icon_div_ff .btn_canvas_ff {
-  display: inline-flex;
-}
+        .benefit-list li, .feature-list li {
+            margin: 10px 0;
+            text-align: left;
+        }
 
-.popup_top_icon_div_ff .ff_popup_top_image {
-  z-index: 0;
-  width: 100%;
-  height: auto;
-  position: absolute;
-  inset: 0 0 auto;
-}
+        .testimonials blockquote {
+            font-size: 1.2em;
+            color: #555;
+            margin: 20px 0;
+        }
 
-.popup_top_icon_btn_ff {
-  cursor: pointer;
-  z-index: 1;
-  background: none;
-  border: none;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  font-size: 20px;
-  display: inline-flex;
-}
+        .testimonials blockquote:before {
+            content: open-quote;
+        }
 
-.popup_top_icon_btn_ff img {
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  display: flex;
-}
+        .testimonials blockquote:after {
+            content: close-quote;
+        }
 
-.popup_top_icon_btn_ff:focus {
-  outline: none;
-}
+        .cta {
+            background-color: #4CAF50;
+            color: white;
+        }
 
-.dot_ff {
-  background-color: red;
-  border-radius: 50%;
-  width: 15px;
-  height: 15px;
-}
+        .cta a {
+            display: inline-block;
+            background-color: white;
+            color: #4CAF50;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.5em;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
 
-.dot_ff-top-right {
-  position: absolute;
-  top: 33%;
-  right: 16px;
-}
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
 
-@media (prefers-reduced-motion: reduce) {
-  .dot_ff {
-    animation: none;
-  }
-}
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+        }
 
-.topbar_cross_icon_ff {
-  cursor: pointer;
-  background: #eaeaea;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 20px;
-  padding: 0;
-  display: flex;
-}
+    </style>
+</head>
 
-.topbar_cross_icon_ff img {
-  width: 12px;
-  height: 12px;
-}
+<body>
 
-.btn_canvas_ff .topbar_detail_submit_btn_ff {
-  cursor: pointer;
-  color: #6e75ff;
-  background: #f0f0ff;
-  border: none;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  min-width: 108px;
-  min-height: 40px;
-  margin: 0;
-  padding: 10px 30px;
-  font-family: PoppinsRegular;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  display: flex;
-}
-
-.btn_canvas_ff .topbar_detail_submit_btn_ff:hover {
-  box-shadow: none;
-  color: #fff;
-  cursor: pointer;
-  background: #6e75ff;
-  border: none;
-  outline: none;
-}
-
-.btn_canvas_ff .topbar_detail_okay_btn_ff {
-  cursor: pointer;
-  color: #555;
-  background: #eee;
-  border: none;
-  border-radius: 5px;
-  justify-content: center;
-  align-items: center;
-  min-width: 108px;
-  min-height: 40px;
-  margin: 0;
-  padding: 10px 30px;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  display: flex;
-}
-
-.btn_canvas_ff .topbar_detail_okay_btn_ff:hover, .btn_canvas_ff .topbar_detail_okay_btn_ff:focus {
-  box-shadow: none;
-  color: #eee;
-  cursor: pointer;
-  background: #555;
-  border: none;
-  outline: none;
-}
-
-.btn_canvas_ff .topbar_detail_submit_btn_ff:disabled, .btn_canvas_ff .topbar_detail_okay_btn_ff:disabled {
-  color: #696969 !important;
-  background-color: #d3d3d3 !important;
-}
-
-.spaced_icon_ff {
-  margin-left: 5px;
-  background-color: #0000 !important;
-}
-
-.toggle_btn_ff {
-  justify-content: center;
-  align-items: center;
-  padding: 6px 0 18px;
-  display: flex;
-  position: relative;
-}
-
-.create_notification_container_ff {
-  cursor: auto;
-  box-sizing: border-box;
-  z-index: 99999;
-  pointer-events: initial;
-  background-color: #fff;
-  border: none;
-  border-radius: 8px;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 512px;
-  margin-top: 16px;
-  padding: 24px;
-  position: absolute;
-  inset: 20px 100px auto auto;
-  box-shadow: 0 0 10px;
-}
-
-plasmo-csui {
-  z-index: 999;
-  pointer-events: none;
-  position: absolute;
-  inset: 0;
-}
-
-.topbar_heading_box_ff {
-  flex-direction: row;
-  flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-
-.topbar_icon_ff {
-  justify-content: center;
-  align-items: center;
-  margin-right: 10px;
-  display: flex;
-}
-
-.topbar_detail_head_ff {
-  text-align: left;
-  letter-spacing: -.01em;
-  color: #22262a;
-  border: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: PoppinsRegular;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  font-family: PoppinsMedium !important;
-}
-
-.topbar_detail_body_ff {
-  letter-spacing: 0;
-  align-items: flex-start;
-  margin: 16px 0 17px;
-  padding: 0;
-  display: flex;
-}
-
-.topbar_detail_para_ff {
-  width: 100%;
-  margin: 0;
-}
-
-.topbar_detail_para_ff .topbar_detail_text {
-  color: #484f56;
-  letter-spacing: -.01em;
-  margin: 0;
-  padding: 0;
-  font-family: PoppinsRegular;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 21px;
-}
-
-.topbar_detail_para_ff .topbar_detail_text_last {
-  color: #878f97;
-  letter-spacing: -.01em;
-  margin: 0;
-  padding-top: 8px;
-  padding-bottom: 2px;
-  font-family: PoppinsRegular;
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 18px;
-}
-
-.topbar_detail_static_arrow_ff {
-  position: absolute;
-  top: 24px;
-  right: 24px;
-}
-
-.topbar_detail_static_arrow_ff img {
-  width: 24px;
-  height: 26px;
-  display: inline;
-}
-
-.topbar_detail_btns_ff {
-  justify-content: space-between;
-  width: 70%;
-  display: flex;
-}
-
-.narrow_btns_ff {
-  width: 53% !important;
-}
-
-.dot_ff {
-  border-radius: 50%;
-  flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
-  width: 8px;
-  height: 8px;
-  display: flex;
-}
-
-.success_dot_ff {
-  background-color: #12b76a !important;
-}
-
-.warning_dot_ff {
-  background-color: #f08c00 !important;
-}
-
-.error_dot_ff {
-  background-color: red !important;
-}
-
-.large_dot_ff {
-  width: 12px !important;
-  height: 12px !important;
-}
-
-.medium_dot_ff {
-  width: 10px !important;
-  height: 10px !important;
-}
-
-.small_dot_ff {
-  width: 6px !important;
-  height: 6px !important;
-}
-
-</style><div id="plasmo-shadow-container" style="z-index: 2147483647; position: relative;"><div id="plasmo-overlay-0" class="plasmo-csui-container" style="display: flex; position: absolute; top: 0px; left: 0px;"></div></div></template></plasmo-csui><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" async="" src="./Startup Landing Page _ SparkRockets_files/js"></script><script src="./Startup Landing Page _ SparkRockets_files/bundle.tracing.replay.min.js" crossorigin="anonymous"></script><script async="" src="./Startup Landing Page _ SparkRockets_files/gtm.js"></script><script src="./Startup Landing Page _ SparkRockets_files/dmxAppConnect.js"></script>
-    <script src="./Startup Landing Page _ SparkRockets_files/cd93790aa8d2500e4ea8956ab7b3da21.min.js" crossorigin="anonymous"></script>
-
-          <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WK384FVZ');</script>
-    <!-- End Google Tag Manager -->
-
-    <!--<base href="/">--><base href=".">
-
-    
-    <title>
-        Startup Landing Page | SparkRockets
-    </title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <script src="./Startup Landing Page _ SparkRockets_files/dmxRouting.js" defer=""></script>
-
-    <script src="./Startup Landing Page _ SparkRockets_files/dmxBrowser.js" defer=""></script>
-    <script src="./Startup Landing Page _ SparkRockets_files/dmxBootstrap5Collapse.js" defer=""></script>
-    <script src="./Startup Landing Page _ SparkRockets_files/dmxFormatter.js" defer=""></script>
-    <script src="./Startup Landing Page _ SparkRockets_files/dmxSwiper.js" defer=""></script>
-    <link rel="stylesheet" href="./Startup Landing Page _ SparkRockets_files/swiper.min.css">
-    <script src="./Startup Landing Page _ SparkRockets_files/swiper.min.js" defer=""></script>
-    <link rel="stylesheet" href="./Startup Landing Page _ SparkRockets_files/animate.min.css">
-    <script src="./Startup Landing Page _ SparkRockets_files/dmxAnimateCSS.js" defer=""></script>
-    <link rel="stylesheet" href="./Startup Landing Page _ SparkRockets_files/dmxDropzone.css">
-    <script src="./Startup Landing Page _ SparkRockets_files/dmxDropzone.js" defer=""></script>
-    <script src="./Startup Landing Page _ SparkRockets_files/dmxStateManagement.js" defer=""></script>
-    <link rel="stylesheet" href="./Startup Landing Page _ SparkRockets_files/dmxNotifications.css">
-    <script src="./Startup Landing Page _ SparkRockets_files/dmxNotifications.js" defer=""></script>
-
-
-
-    <meta property="og:image" content="/assets/images/Zigzag_Logo.jpg">
-    <meta property="og:url" content="https://sparkrockets.com">
-    <meta property="og:title" content="Startup" landing="" page="" |="" sparkrockets="">
-    <meta name="description" content="your AI Entrepreneur in Residence">
-    <meta name="robots" content="all">
-<style>/* cyrillic-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v26/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-/* cyrillic-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfCRc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
-}
-/* cyrillic */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfABc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-}
-/* greek-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfCBc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+1F00-1FFF;
-}
-/* greek */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfBxc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
-}
-/* vietnamese */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfCxc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfChc4AMP6lbBP.woff2) format('woff2');
-  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/roboto/v32/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-</style><style>@font-face { font-family: DMSans; src: url('chrome-extension://meimoidfecamngeoanhnpdjjdcefoldn/assets/fonts/DMSans-Regular.ttf'); }@font-face { font-family: PoppinsMedium; src: url('chrome-extension://meimoidfecamngeoanhnpdjjdcefoldn/assets/fonts/Poppins-Medium.otf'); }@font-face { font-family: PoppinsRegular; src: url('chrome-extension://meimoidfecamngeoanhnpdjjdcefoldn/assets/fonts/Poppins-Regular.otf'); }@font-face { font-family: Roboto; src: url('chrome-extension://meimoidfecamngeoanhnpdjjdcefoldn/assets/fonts/Roboto-Regular.ttf'); }@font-face { font-family: Inter; src: url('chrome-extension://meimoidfecamngeoanhnpdjjdcefoldn/assets/fonts/Inter-Regular.ttf'); }</style></head>
-
-
-<body is="dmx-app" id="zig" data-new-gr-c-s-check-loaded="14.1202.0" data-gr-ext-installed=""><span id="warning-container"><i data-reactroot=""></i></span>
-    <div is="dmx-view" id="content">
-        <!-- Wappler include head-page="layouts/tailwind_open" is="dmx-app" id="exp_landingpage" appconnect="local" components="{dmxStateManagement:{}}" -->
-<dmx-session-manager id="session1"></dmx-session-manager>
-
-<meta name="ac:route" content="/show/:uuid">
-
-<dmx-serverconnect id="get_landingpage" url="/api/StartupLandingPage/getLandingPageDetails?page=NGFiZDZmZDgtZGUwOC00NGE0LThhM2QtMzg5MTM4MTU3NDU1"></dmx-serverconnect>
-
-<link href="./Startup Landing Page _ SparkRockets_files/output.css" rel="stylesheet">
-<div>
-    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
-        <img src="./Startup Landing Page _ SparkRockets_files/photo-1521737604893-d14cc237f11d" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
-        <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
-            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-        </div>
-        <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
-            <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-        </div>
-
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-4xl lg:mx-0">
-                <div class="mb-8 flex">
-                    <div class="font-semibold text-white relative rounded-full px-3 py-1 text-xl leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                        ElderEase
-                    </div>
-                </div>
-                <h2 class="text-5xl font-bold tracking-tight text-white sm:text-6xl">Simplify Home Healthcare Coordination </h2>
-                <p class="mt-6 text-3xl sm:text-4xl leading-8 text-gray-300">Empowering providers, easing families' minds. </p>
-            </div>
-        </div>
+    <div class="header">
+        <h1>SparkRockets</h1>
+        <p>Simplify Home Healthcare Coordination</p>
     </div>
-    <div class="overflow-hidden bg-white py-24 sm:py-20">
-        <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
-            <div class="grid flex-col grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start lg:place-items-start place-items-center">
-                <div class="px-6 lg:px-0 lg:pr-4 w-full flex justify-start">
-                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
 
-                        <p class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-indigo-600">Key Benefits</p>
-
-                        <dl class="mt-10 max-w-xl space-y-8 text-xl leading-7 text-gray-600 lg:max-w-none">
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                    </svg>
-                                    Efficient Care Coordination.
-                                </dt>
-                                <dd class="inline">Streamline tasks, optimize schedules..</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                    </svg>
-                                    Improved Communication.
-                                </dt>
-                                <dd class="inline">Enhance collaboration among care team..</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                    </svg>
-                                    Enhanced Family Engagement.
-                                </dt>
-                                <dd class="inline">Keep families informed, ease worries..</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                    </svg>
-                                    Personalized Care Plans.
-                                </dt>
-                                <dd class="inline">Tailored approach for each individual..</dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
-                <div class="sm:px-6 lg:px-0 lg:pr-4 w-full h-full flex items-center">
-
-
-                    <div class="mx-auto max-w-2xl lg:mx-0 w-full h-full">
-                        <img class="-mb-12 w-full h-full sm:rounded-xl bg-gray-800 ring-1 ring-white/10" dmx-bind:src="get_landingpage.data.query.benefits_picture_url" dmx-bind:alt="get_landingpage.data.query.benefits_picture_prompt" src="./Startup Landing Page _ SparkRockets_files/62b4458c-e372-4e6f-a761-d7ba7df69df7.png" alt="Create a realistic image showing a home healthcare provider assisting an elderly person.">
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <section class="bg-gray-900 py-24 sm:py-24">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto grid max-w-2xl grid-cols-1 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-                <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-
-                    <figure class="mt-10 flex flex-auto flex-col justify-between">
-                        <blockquote class="text-2xl leading-8 text-white">
-                            <p>"ElderEase transformed our care process.."</p>
-                        </blockquote>
-                        <figcaption class="mt-10 flex items-center gap-x-6">
-
-                            <div class="text-xl">
-                                <div class="font-semibold text-white">Gary from New York</div>
-
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-
-                    <figure class="mt-10 flex flex-auto flex-col justify-between">
-                        <blockquote class="text-2xl leading-8 text-white">
-                            <p>"Lifeline for coordinating my mom's care.."</p>
-                        </blockquote>
-                        <figcaption class="mt-10 flex items-center gap-x-6">
-
-                            <div class="text-xl">
-                                <div class="font-semibold text-white">Emily from Los Angeles</div>
-
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="flex flex-col pb-10 sm:pb-16 lg:pb-0 lg:pr-8 xl:pr-20">
-
-                    <figure class="mt-10 flex flex-auto flex-col justify-between">
-                        <blockquote class="text-2xl leading-8 text-white">
-                            <p>“Exceptional support for our elderly patients..”</p>
-                        </blockquote>
-                        <figcaption class="mt-10 flex items-center gap-x-6">
-
-                            <div class="text-xl">
-                                <div class="font-semibold text-white">Sam from Chicago</div>
-
-                            </div>
-                        </figcaption>
-                    </figure>
-                </div>
-            </div>
-        </div>
+    <section class="benefits">
+        <h2>Key Benefits</h2>
+        <p>Empowering providers, easing families' minds.</p>
+        <ul class="benefit-list">
+            <li><strong>Efficient Care Coordination:</strong> Streamline tasks, optimize schedules.</li>
+            <li><strong>Improved Communication:</strong> Enhance collaboration among care team.</li>
+            <li><strong>Enhanced Family Engagement:</strong> Keep families informed, ease worries.</li>
+            <li><strong>Personalized Care Plans:</strong> Tailored approach for each individual.</li>
+        </ul>
     </section>
 
-    <div class="overflow-hidden bg-white py-24 sm:py-20">
-        <div class="mx-auto max-w-7xl md:px-6 lg:px-8">
-            <div class="grid flex-col grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:grid-cols-2 lg:items-start lg:place-items-start place-items-center">
+    <section class="testimonials">
+        <h2>What People Are Saying</h2>
+        <blockquote>"ElderEase transformed our care process."</blockquote>
+        <p>- Gary from New York</p>
+        <blockquote>"Lifeline for coordinating my mom's care."</blockquote>
+        <p>- Emily from Los Angeles</p>
+        <blockquote>"Exceptional support for our elderly patients."</blockquote>
+        <p>- Sam from Chicago</p>
+    </section>
 
-                <div class="sm:px-6 lg:px-0 lg:pr-4 w-full h-full flex items-center">
+    <section class="features">
+        <h2>Features</h2>
+        <ul class="feature-list">
+            <li><strong>Task Assignment:</strong> Allocate responsibilities effortlessly.</li>
+            <li><strong>Real-Time Updates:</strong> Stay informed with instant notifications.</li>
+            <li><strong>Family Portal:</strong> Transparent access for families 24/7.</li>
+            <li><strong>Reporting Tools:</strong> Track progress, monitor outcomes.</li>
+        </ul>
+    </section>
 
+    <section class="cta">
+        <h2>Start Simplifying Home Healthcare Today</h2>
+        <p>Experience ElderEase's comprehensive care coordination solution.</p>
+        <a href="https://sparkrockets.com">Get Started</a>
+    </section>
 
-                    <div class="mx-auto max-w-2xl lg:mx-0 w-full h-full">
-                        <img class="-mb-12 w-full h-full sm:rounded-xl bg-gray-800 ring-1 ring-white/10" dmx-bind:src="get_landingpage.data.query.features_picture_url" dmx-bind:alt="get_landingpage.data.query.features_picture_prompt" src="./Startup Landing Page _ SparkRockets_files/3dc7518d-ccef-4def-8f0a-6a41375eaa8f.png" alt="Create a detailed image showcasing caregivers using ElderEase&#39;s platform.">
-                    </div>
+    <footer>
+        <p>We value your privacy. Check our <a href="https://app.sparkrockets.com/privacypolicy">Privacy Policy</a> and <a href="https://app.sparkrockets.com/terms">Terms of Use</a>.</p>
+        <p>Follow us on <a href="https://www.linkedin.com/company/sparkrockets/" target="_blank">LinkedIn</a></p>
+    </footer>
 
-                </div>
-                <div class="px-6 lg:px-0 lg:pr-4 w-full flex justify-start">
-                    <div class="mx-auto max-w-2xl lg:mx-0 lg:max-w-lg">
+</body>
 
-                        <p class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl text-indigo-600">Features</p>
-
-                        <dl class="mt-10 max-w-xl space-y-8 text-xl leading-7 text-gray-600 lg:max-w-none">
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                    </svg>
-                                    Task Assignment.
-                                </dt>
-                                <dd class="inline">Allocate responsibilities effortlessly..</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                    </svg>
-                                    Real-Time Updates.
-                                </dt>
-                                <dd class="inline">Stay informed with instant notifications..</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                    </svg>
-                                    Family Portal.
-                                </dt>
-                                <dd class="inline">Transparent access for families 24/7..</dd>
-                            </div>
-                            <div class="relative pl-9">
-                                <dt class="inline font-semibold text-gray-900">
-                                    <svg class="absolute left-1 top-1 h-5 w-5 text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                                        <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd"></path>
-                                    </svg>
-                                    Reporting Tools.
-                                </dt>
-                                <dd class="inline">Track progress, monitor outcomes..</dd>
-                            </div>
-                        </dl>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="relative isolate overflow-hidden bg-gray-900">
-        <div class="px-6 py-18 sm:px-6 py-24 lg:px-8">
-            <div class="mx-auto max-w-2xl text-center">
-                <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Start Simplifying Home Healthcare Today</h2>
-                <p class="mx-auto mt-6 max-w-xl text-xl leading-8 text-gray-300">Experience ElderEase's comprehensive care coordination solution.</p>
-                <div class="mt-10 flex items-center justify-center gap-x-6">
-                    <a href="https://sparkrockets.com/" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white" is="dmx-link">Get Started</a>
-
-                </div>
-            </div>
-        </div>
-        <svg viewBox="0 0 1024 1024" class="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]" aria-hidden="true">
-            <circle cx="512" cy="512" r="512" fill="url(#8d958450-c69f-4251-94bc-4e091a323369)" fill-opacity="0.7"></circle>
-            <defs>
-                <radialgradient id="8d958450-c69f-4251-94bc-4e091a323369">
-                    <stop stop-color="#7775D6"></stop>
-                    <stop offset="1" stop-color="#E935C1"></stop>
-                </radialgradient>
-            </defs>
-        </svg>
-    </div>
-</div>
-        <!-- Wappler include bootstrap5="local" is="dmx-app" id="zig" appconnect="local" -->
-<link href="./Startup Landing Page _ SparkRockets_files/output.css" rel="stylesheet">
-
-<footer class="bg-white z-10">
-    <div class="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div class="flex justify-center space-x-6 md:order-2">
-
-
-            <a href="https://www.linkedin.com/company/sparkrockets/" class="text-gray-400 hover:text-gray-500" target="_blank" is="dmx-link">
-                <span class="sr-only">LinkedIn</span>
-                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-                </svg>
-            </a>
-
-
-
-        </div>
-        <div class="mt-8 md:order-1 md:mt-0">
-
-            <p class="font-semibold text-center leading-5 text-gray-500">We value your privacy, your ideas are not shared with anyone, for more info check our <a class="font-semibold text-sr-red hover:text-sr-blue" href="https://app.sparkrockets.com/privacypolicy" target="_blank" is="dmx-link">Privacy Policy</a> and <a class="font-semibold text-sr-red hover:text-sr-blue" href="https://app.sparkrockets.com/terms" target="_blank" is="dmx-link">Terms of Use</a>.</p>
-        </div>
-    </div>
-</footer>
-    </div>
-
-
-<div class="calendly-opti-root calendly-lifecycle-optibutton_singleton"></div><div class="calendly-frame-tag" manager_id="efc6b550-81b1-440b-a169-13820a590e6c" id="efc6b550-81b1-440b-a169-13820a590e6c" style="height: 0px; width: 0px; visibility: hidden;"></div><iframe id="8zCHD4jo" frameborder="0" src="./Startup Landing Page _ SparkRockets_files/translateSandbox.html" style="width: 0px; height: 0px; display: none;"></iframe></body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
-      div.grammarly-desktop-integration {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select:none;
-        user-select:none;
-      }
-
-      div.grammarly-desktop-integration:before {
-        content: attr(data-content);
-      }
-    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>
+</html>
