@@ -5,70 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElderEase Web Application</title>
+
+    <!-- Link to the external CSS (mimicking the design of your landing page) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f0f4f8;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 0 20px;
+        }
+
+        h1, h2 {
+            color: #222;
         }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
         }
 
-        h1, h2, h3 {
-            color: #4CAF50;
-        }
-
-        .task-section, .updates-section, .family-portal-section, .reports-section {
+        .section {
             background-color: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
 
-        .task-form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .task-form input, .task-form button {
-            padding: 10px;
-            margin: 5px 0;
+        .task-form input {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
             font-size: 16px;
+            margin-bottom: 10px;
         }
 
         .task-form button {
-            background-color: #4CAF50;
+            padding: 15px;
+            width: 100%;
+            background-color: #ff6b6b;
             color: white;
+            font-weight: bold;
             border: none;
+            border-radius: 6px;
             cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
         }
 
         .task-form button:hover {
-            background-color: #45a049;
+            background-color: #ff4a4a;
         }
 
-        .task-list {
-            margin-top: 20px;
-            padding: 0;
+        .task-list, .family-task-list {
             list-style-type: none;
+            margin-top: 20px;
         }
 
-        .task-list li {
-            padding: 10px;
-            border-bottom: 1px solid #ddd;
+        .task-list li, .family-task-list li {
+            padding: 15px;
+            background-color: #f1f1f1;
+            border-radius: 6px;
+            margin-bottom: 10px;
         }
 
         .notification {
-            padding: 10px;
-            background-color: #ffeb3b;
-            margin-top: 10px;
-            border-radius: 5px;
+            padding: 15px;
+            background-color: #ffeaa7;
+            border-radius: 6px;
+            font-weight: bold;
+            margin-bottom: 10px;
         }
 
         .report-table {
@@ -78,16 +93,18 @@
         }
 
         .report-table th, .report-table td {
-            padding: 12px;
-            text-align: left;
+            padding: 15px;
             border-bottom: 1px solid #ddd;
         }
 
         .report-table th {
-            background-color: #4CAF50;
+            background-color: #333;
             color: white;
         }
 
+        .report-table td {
+            color: #333;
+        }
     </style>
 </head>
 
@@ -96,7 +113,7 @@
         <h1>ElderEase Web Application</h1>
 
         <!-- Task Assignment Section -->
-        <div class="task-section">
+        <div class="section">
             <h2>Task Assignment</h2>
             <form class="task-form" id="taskForm">
                 <input type="text" id="taskInput" placeholder="Assign a new task...">
@@ -106,7 +123,7 @@
         </div>
 
         <!-- Real-Time Updates Section -->
-        <div class="updates-section">
+        <div class="section">
             <h2>Real-Time Updates</h2>
             <div id="updateSection">
                 <p class="notification">New update: Caregiver has completed the task "Take patient for a walk."</p>
@@ -115,18 +132,16 @@
         </div>
 
         <!-- Family Portal Section -->
-        <div class="family-portal-section">
+        <div class="section">
             <h2>Family Portal</h2>
-            <div>
-                <p><strong>Family View:</strong> You can track your loved one’s care progress below.</p>
-                <ul class="task-list" id="familyTaskList">
-                    <!-- Task updates for the family will be shown here -->
-                </ul>
-            </div>
+            <p><strong>Family View:</strong> Track your loved one’s care progress below.</p>
+            <ul class="family-task-list" id="familyTaskList">
+                <!-- Task updates for the family will be shown here -->
+            </ul>
         </div>
 
         <!-- Reporting Tools Section -->
-        <div class="reports-section">
+        <div class="section">
             <h2>Reporting Tools</h2>
             <table class="report-table">
                 <thead>
